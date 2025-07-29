@@ -1,11 +1,34 @@
+ html{
+  font-size: 16px ;
+ }
 body{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'roboto', sans-serif;
+  /* font-size: 24px; */
+  font-weight: 600;
+  /* text-align: justify; */
+  /* font-style: italic; */
+  line-height: 1.2;
+  font-size: 1rem;
+  color: #444444;
+}
+
+h1 h2 h3 h4 h5{
+  font-family: 'inter', sans-serif;
+  /* text-transform: uppercase; */
+   text-decoration:line-through;
+   font-weight: 600;
+   color:#222222
 }
 
 a {
   text-decoration: none;
+  color: #3b82f6;
+}
+
+a:hover, a:focus{
+color:#1d4ed8;
 }
 
 #navbar {
@@ -45,13 +68,72 @@ h1 {
   width: 100%;
 }
 
-.location{
-  color: gray;
-  margin-bottom: 16px;
+#jobs-table {
+  width: 100%;
+  border: 1px solid gray;
+  border-collapse: collapse ;
+}
+
+.jobs-header-row  th{
+  border: 1px solid gray;
+  background-color:#dbeafe;
+  padding: 8px;
+  text-align: center;
+  color:#222222
+}
+
+.jobs-data-row td {
+  border: 1px solid gray;
+  padding: 8px;
+   
+}
+
+#jobs-table tr:nth-child(odd) {
+  background-color: ghostwhite;
+  background-color: #eff6ff;
 }
 
 h2{
   text-align: center;
+}
+
+#application{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+.form-groups{
+  margin: 16px;
+}
+
+#application-form label{
+  font-weight: 600px;
+}
+
+#application-form input, select, textarea{
+  padding : 8px;
+  font-size: 1.25rem;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form-groups textarea{
+  width:80%;
+  font-family: 'roboto', sans-serif;
+}
+
+.form-groups input[type="checkbox"] {
+  width:16px;
+  height:16px;
+}
+
+.form-groups input[type="submit"] {
+  background-color: #6b8cc1;
+  color: white;
+  font-weight: 500;
+  padding :16px 16px 16px 16px;
+  cursor: pointer;
 }
 #jobs{
   max-width: 800px;
@@ -68,7 +150,7 @@ h3{
 }
 
 #footer{
-  background-color: ghostwhite;
+  background-color: #fafafa;
   padding: 8px;
   margin-top: 16px;
   text-align: center;
@@ -80,9 +162,10 @@ h3{
 
 #footer-links li{
   display: inline;
-  margin: 0 8px;
+  margin: 0 16px;
 }
 
 .copyright{
-  color:gray;
+  color:#71717a;
+  font-size: 0.875rem;
 }
